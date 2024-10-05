@@ -1,22 +1,242 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <style>
+        body {
+          background: rgb(204,204,204); 
+          width: 21cm;
+          height: 29.7cm;
+          margin: 0 auto;
+        }
 
-<head>
-<title>My First Webpage</title>
-</head>
+        page {
+          background: white;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 0.5cm;
+          position: relative;
+        }
+
+        page[size="A4"] {  
+          width: 21cm;
+          height: 29.7cm; 
+        }
+
+        @page {
+          size: 21cm 29.7cm;
+          margin: 0mm;
+        }
+      </style>
+   </head>
+   <body>
+      <page size="A4">
+      </page>
+      <page size="A4">
+      </page>
+   </body>
+</html>
+
+<page size="A4">
+  <div class="container">
+    <div class="leftPanel">
+    </div>
+    <div class="rightPanel">
+    </div>
+  </div>
+</page>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<div class="leftPanel">
+  <img src="avatar.png"/>
+  <div class="details">
+    <div class="item bottomLineSeparator">
+      <h2>
+        CONTACT
+      </h2>
+    </div>
+    <div class="item bottomLineSeparator">
+      <h2>
+        SKILLS
+      </h2>
+    </div>
+    <div class="item">
+      <h2>
+        EDUCATION
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="item bottomLineSeparator">
+  <h2>
+    CONTACT
+  </h2>
+  <div class="smallText">
+    <p>
+      <i class="fa fa-phone contactIcon" aria-hidden="true"></i>
+      (+33) 777 777 77
+    </p>
+    <p>
+      <i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
+      <a href="lorem@ipsum.com@gmail.com">
+        lorem@ipsum.com
+      </a>
+    </p>
+    <p>
+      <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>
+      New York, USA
+    </p>
+    <p>
+      <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
+      <a href="#">
+        in/loremipsum
+      </a>
+    </p>
+    <p class="lastParagrafNoMarginBottom">
+      <i class="fa fa-skype contactIcon" aria-hidden="true"></i>
+      <a href="#">
+        loremipsum
+      </a>
+    </p>
+  </div>
+</div>
+
+<div class="item bottomLineSeparator">
+  <h2>
+    SKILLS
+  </h2>
+  <div class="smallText">
+    <div class="skill">
+      <div>
+        <span>Accounting</span>
+      </div>
+      <div class="yearsOfExperience">
+        <span class="alignright">14</span>
+        <span class="alignleft">years</span>
+      </div>
+    </div>
+    <div class="skill">
+      <div>
+        <span>Word</span>
+      </div>
+      <div class="yearsOfExperience">
+        <span class="alignright">3</span>
+        <span class="alignleft">years</span>
+      </div>
+    </div>
+    <div class="skill">
+      <div>
+        <span>Powerpoint</span>
+      </div>
+      <div class="yearsOfExperience">
+        <span class="alignright">1</span>
+        <span class="alignleft">year</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="item">
+  <h2>
+    EDUCATION
+  </h2>
+  <div class="smallText">
+    <p class="bolded white">
+      Bachelor of Economics
+    </p>
+    <p>
+      The University of Sydney
+    </p>
+    <p>
+      2010 - 2014
+    </p>
+  </div>
+</div>
+
+<div class="rightPanel">
+  <div>
+    <h1>
+      Jhon Doe
+    </h1>
+    <div class="smallText">
+      <h3>
+        Accountant
+      </h3>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>
+    About me
+  </h2>
+  <div class="smallText">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis, justo sed feugiat pulvinar., quam ipsum tincidunt enim, ac gravida est metus sit amet neque. Curabitur ut arcu ut nunc finibus accumsan id id elit. 
+    </p>
+    <p>
+      Vivamus non magna quis neque viverra finibus quis a tortor. 
+    </p>
+  </div>
+</div>
+
+<div class="workExperience">
+  <h2>
+    Work experience
+  </h2>
+  <ul>
+    <li>
+      <div class="jobPosition">
+        <span class="bolded">
+          Accountant
+        </span>
+        <span>
+          Jun 2014 - Sept 2015
+        </span>
+      </div>
+      <div class="projectName bolded">
+        <span>
+          Accounting project name | Company name
+        </span>
+      </div>
+    </li>
+    <li>
+      <div class="jobPosition">
+        <span class="bolded">
+          Digital Marketing Expert
+        </span>
+        <span>
+          Nov 2020 - Sept 2021
+        </span>
+      </div>
+      <div class="projectName bolded">
+        <span>
+          Project name | Company name
+        </span>
+      </div> 
+    </li>
+    <li>
+      <div class="jobPosition">
+        <span class="bolded">
+          Accountant
+        </span>
+        <span>
+          Jun 2017 - May 2020
+        </span>
+      </div>
+      <div class="projectName bolded">
+        <span>
+         Project name | Company name
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
 
 
 
 
-<h1> my cool website</h1>
-
-
-
-<p>welcome to my first website! I am learning HTML.</p>
-
-<img src="Picture1.png">
-
-<a href="about.html"> About Me </a><br>
-<body>
-<a href="https://www.google.com">Google</a><br>
-</body>
